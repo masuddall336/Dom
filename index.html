@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explor DOM</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+<body>
+
+    <main>
+        <section>
+            <h1 title="I practic this DOM....!">Dom test</h1>
+            <h2 class="">Test Dom </h2>
+            <p>Lorem ipsum dolor sit, amen consectetur adipisicing elit. Minus, accusamus?</p>
+            <p>Lorem, ipsum dolor stttttt consectetur adipisicing.</p>
+            <h2>hi</h2>
+            <div id="check">
+                <h1>Abdullah al Masud</h1>
+            </div>
+        </section>
+        <div class="main-div">
+                <div class = "hi" >
+                    <h2 class="article">Article - 1</h2>
+                    <h4 class="author">Athour - 1</h4>
+                    <p class="peragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit autem accusantium et ipsam eaque repellendus quo sed neque eligendi maxime accusamus, incidunt quidem explicabo consequatur qui. Magnam voluptatem nihil asperiores!</p>
+                </div>
+                <div class = "hi">
+                    <h2 class="article">Article - 2</h2>
+                    <h4 class="author">Athour -2 </h4>
+                    <p class="peragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit autem accusantium et ipsam eaque repellendus quo sed neque eligendi maxime accusamus, incidunt quidem explicabo consequatur qui. Magnam voluptatem nihil asperiores!</p>
+                </div>
+                <div class = "hi">
+                    <h2 class="article">Article - 3</h2>
+                    <h4 class="author">Athour - 2</h4>
+                    <p class="peragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit autem accusantium et ipsam eaque repellendus quo sed neque eligendi maxime accusamus, incidunt quidem explicabo consequatur qui. Magnam voluptatem nihil asperiores!</p>
+                </div>
+                <div class = "hi ">
+                    <ul id="hii">
+                        <li>List 1</li>
+                        <li>List 2</li>
+                        <li>List 3</li>
+                    </ul>
+                </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.body.style.backgroundColor = "#a40c0c";
+
+        // document.getElementById("check").setAttribute("title", "its my name");
+        var a = document.getElementById("check");
+        var b = document.createElement("p");
+        b.innerHTML = "what is your name..?";
+        a.appendChild(b);
+
+        var takewrap = document.getElementById("hii");
+        var addLi = document.createElement("li");
+        var addLi2 = document.createElement("li");
+        addLi.innerHTML = "List item 4";
+        addLi2.innerHTML = "List item 5";
+        takewrap.appendChild(addLi);
+        takewrap.appendChild(addLi2);
+
+
+
+
+        document.querySelector("section h1").setAttribute("title", "ha ha ha........!");
+
+       var s =  document.querySelectorAll("section h2");
+       for(i = 0; i < s.length; i++){
+           var ras = s[i];
+           console.log(ras);
+            ras.innerHTML = "Abdullah al Masud"
+           ras.style.color = "orange";
+
+       }
+
+
+      document.getElementById("check").style.color = "red";
+      var changeColor = document.getElementById("check");
+      changeColor.style.fontSize = "30px";
+
+        var wrap = document.getElementsByClassName("hi");
+        for(i = 0; i <wrap.length; i++){
+            var take = wrap[i];
+            console.log(take);
+            take.style.backgroundColor = "#E0FCD8";
+            take.style.border = "2px solid #E7DC9F";
+            take.style.padding = "10px";
+            take.style.borderRadius = "10px";
+            take.style.margin = "15px auto";
+            take.style.width = "50%";
+        }
+
+
+     var allclass = document.getElementsByClassName("article");
+      for(i = 0; i < allclass.length; i++){
+            var takeArticle = allclass[i];
+            // console.log(takeArticle);
+
+            // console.log(takeArticle.innerHTML);
+            // takeArticle.innerHTML = "Writer"+i;
+            
+            takeArticle.style.color = "#EBEBEB";
+            takeArticle.style.backgroundColor = "#16A099";
+            takeArticle.style.textAlign = "center";
+            takeArticle.style.border = "2px solid #3fead2";
+            takeArticle.style.borderRadius = "5px";
+            takeArticle.style.marginBottom = "-15px";
+            takeArticle.style.padding = "10px";
+      }
+
+
+
+      var takeAuthor = document.getElementsByClassName("author");
+      for(i = 0; i < takeAuthor.length; i++){
+            var taker = takeAuthor[i];
+            console.log(taker);
+            
+            taker.style.color = "#EBEBEB";
+            taker.style.backgroundColor = "#16A03F";
+            taker.style.textAlign = "center";
+            taker.style.border = "2px solid #9CD613";
+            taker.style.borderRadius = "5px";
+            taker.style.padding = "5px";
+      }
+
+
+    var z =   document.getElementsByClassName("peragraph");
+      for(i = 0; i < z.length; i++ ){
+          var x = z[i];
+          console.log(x);
+        x.style.color = "#EBEBEB";
+        x.style.backgroundColor = "#CF8517";
+        x.style.textAlign = "center";
+        x.style.border = "2px solid #DFE23A";
+        x.style.borderRadius = "5px";
+        x.style.padding = "10px"
+      }
+        
+    </script>
+
+</body>
+</html>

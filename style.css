@@ -1,0 +1,36 @@
+.hi{
+    background-color: #e0fcd8;
+    padding:25px;
+    margin-bottom: 25px;
+    border:3px solid rgb(231, 220, 159);
+    border-radius: 10px;
+    width: 50%;
+    margin: 15px auto;
+}
+.hi h2{
+
+    color:rgb(235, 235, 235);
+    background-color:rgb(22, 160, 153);
+    border:2px solid rgb(248, 153, 45);
+    border-radius: 5px;
+    padding:10px;
+    text-align: center;
+    margin-bottom: -15px;
+}
+.hi h4{
+    color:rgb(235, 235, 235);
+    background-color:rgb(22, 160, 63);
+    border:2px solid rgb(156, 214, 19);
+    border-radius: 5px;
+    padding:10px;
+    text-align: center;
+}
+.hi p{
+    color:rgb(235, 235, 235);
+    background-color:rgb(207, 133, 23);
+    border:2px solid rgb(223, 226, 58);
+    border-radius: 5px;
+    padding:10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
